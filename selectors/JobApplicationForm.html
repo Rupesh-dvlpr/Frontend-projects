@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: rgb(17, 17, 35);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+           
+        }
+
+        .container{
+            background-color: white;
+            padding: 20px;
+            width: 600px;
+            margin: 50px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px gray;
+        }
+
+        .container h1{
+            text-align: center;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .container .pair{
+            margin-bottom: 10px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        input:read-only{
+            background-color: rgb(181, 174, 174);
+            border: 1px solid black;
+        }
+
+       input:focus{
+        outline: none;
+            border:2px solid red;
+       }
+
+        input::placeholder{
+            font-size: medium;
+            font-style: italic;
+        }
+
+        input:required{
+            border-left: 4px solid black;
+        }
+
+        input[type="checkbox"]{
+            width:auto;
+            margin-left: 10px;
+        }
+
+        input:valid{
+            border-color: green;
+        }
+
+        input:invalid{
+            border-color: red;
+        }
+
+        input[type="number"]:in-range{
+            background-color: rgb(149, 200, 149);
+            border-color: green;
+        }
+
+        input[type="number"]:out-of-range{
+            background-color: red;
+            border-color: red;
+        }
+
+        input[type="checkbox"]:checked{
+            accent-color: green;
+        }
+
+        input[type="checkbox"]:checked + label{
+            color: green;
+        }
+
+        button{
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form action="get">
+            <div class="pair">
+                <label for="aid">Application ID</label><br>
+                <input type="text"  name="aid" id="aid" value="APP2026001" readonly>
+            </div>
+
+            <div class="pair">
+                <label for="fn">Full Name</label><br>
+                <input type="text" placeholder="Enter Full Name" name="fn" id="fn" required>
+            </div>
+
+            <div class="pair">
+                <label for="em">Email</label><br>
+                <input type="email" placeholder="Enter Email Address" name="em" id="em" required>
+            </div>
+
+            <div class="pair">
+                <label for="pn">Phone Number</label><br>
+                <input type="text" placeholder="Enter Mobile Number" pattern="[0-9]{10}" name="pn" id="pn" required>
+            </div>
+
+            <div class="pair">
+                <label for="exy">Experience (Years)</label><br>
+                <input type="number" placeholder="Enter Experience" name="exy" id="exy" min="0" max="20" required>
+            </div>
+
+            <div class="pair">
+                <label for="exs">Experience Salary</label><br>
+                <input type="number" placeholder="Enter Expected Salary" name="exs" id="exs" min="10000" max="100000" required>
+            </div>
+            
+            <div class="pair">
+                <label for="ur">Upload Resume</label><br>
+                <input type="file" name="ur" id="ur" required>
+            </div>
+
+            <div class="pair">
+                <label for="skill">Skills</label><br>
+                <input type="checkbox" name="skill" value="HTML" id="skill">
+                <label for="skill">HTML</label>
+                <input type="checkbox" name = "skill2" value="CSS"  id="skill">
+                <label for="skill">Css</label>
+                <input type="checkbox" name = "skill2" value="JavaScript"  id="skill">
+                <label for="skill">JavaScript</label>
+                <input type="checkbox" value="Java" name="skill3" id="skill">
+                <label for="skill">Java</label>                
+            </div>
+
+            <div class="pair">
+                <label for="add">Address</label><br>
+                <textarea name="add" id="add" rows="5" placeholder="Enter Your Address" required></textarea>
+            </div>
+
+            <div class="pair">
+                <input type="checkbox" value="accept" name="decl" id="del">
+                <label for="decl">I Accept the Declaration</label>
+            </div>
+
+            <button type="submit">Apply</button>
+
+
+        </form>
+    </div>
+</body>
+</html>

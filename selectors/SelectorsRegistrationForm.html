@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body{
+            background-color: rgb(221, 229, 255);
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        
+        form{
+            padding: 30px;
+            margin-top: 100px;
+            background-color: rgb(248, 251, 254);
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            
+            
+        }
+
+        h1{
+            font-size: 38;
+            color: blue;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label{
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input{
+            width: 100%;
+            height: 40px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(233, 13, 13);
+            padding: 10px;
+        }
+
+        button{
+            width: 100%;
+            border-radius: 10px;
+            height: 45px;
+            color: white;
+            font-size: 14px;
+            background-color: blue;
+            margin-top: 20px;
+        }
+        
+         [type="checkbox"]{
+            width: 15px;
+        }
+
+        #check:checked{
+            accent-color: green;
+        }
+
+        #check:checked+label{
+            color: green;
+        }
+
+        input[type="number"]:in-range{
+            background-color: rgb(119, 222, 119);
+        }
+
+        input[type="number"]:out-of-range{
+            background-color: red;
+        }
+        
+
+       input:read-only
+        {
+            background-color: rgb(188, 188, 188);
+            cursor: not-allowed;
+             border: 1px solid black;
+        }
+
+        :required{
+            border-left: 4px solid rgb(226, 25, 25);
+        }
+
+        input:focus{
+            outline: none;
+            border: 1px solid rgb(244, 59, 59);
+        }
+
+        button:hover{
+            font-size: 16px;
+            background-color: rgb(25, 213, 81);
+        }
+
+        </style>
+</head>
+<body>
+
+    <main>
+        <section>
+            <form action="get">
+                <h1>Student Registration Form</h1>
+                <label for="sid">Student ID</label><br>
+                <input type="text" value="STD2026001" readonly><br>
+                <label for="fulln">Full Name</label><br>
+                <input type="text" placeholder="Enter Full Name" required name="fulln" id="fulln"><br>
+                <label for="em">Email</label><br>
+                <input type="email" placeholder="Enter Email" required name="em" id="em"><br>
+                <label for="age">Age</label><br>
+                <input type="number" placeholder="Enter Age" required min="18" max="30" name="age" id="age"><br>
+                <input type="checkbox" name="check" id="check" value="AcceptT&C"><label for="check">I Accept Terms & conditions</label><br>
+                <button type="submit" id="btn">Register</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
