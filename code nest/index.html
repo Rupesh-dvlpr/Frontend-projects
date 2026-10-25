@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code nest</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            line-height: 1.6;
+        }
+
+        header{
+            color: white;
+            text-align: center;
+            background-color: #1e293b;
+            padding: 20px;
+        }
+
+        header h1{
+            font-size: 34px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        header p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        header a{
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+
+        header a:hover{
+            text-decoration: underline;
+            color: rgb(82, 200, 255);
+        }
+
+        section{
+            background-color: white;
+            margin: 40px;
+            padding: 30px;
+            border: 1px solid rgb(182, 180, 180);
+            border-radius: 10px;
+            line-height: 40px;
+        }
+
+        section h2{
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        section a{
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 16px;
+            color: rgb(76, 76, 247);
+        }
+
+        section div{
+            background-color: #f4f6f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgb(182,180,180);
+            border-radius: 10px;
+        }
+
+        section a{
+            margin-top:5px;
+        }
+
+        section a:hover{
+            text-decoration: underline;
+        }
+
+        footer{
+             color: white;
+            text-align: center;
+            background-color: #1e293b;
+            padding: 20px;
+            line-height: 40px;
+        }
+
+        footer h3{
+            font-size: 24px;        
+        }
+
+        footer a{
+            text-decoration: none;
+            margin: 10px;
+            color:rgb(82, 200, 255);
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">🚀 CodeNest</h1>
+        <p>Your Home for Developer Resources</p>
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#resources">Resouces</a>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome to CodeNest 👋</h2>
+            <p>Learn Web Development using simple and practical resources.</p>
+            <p>Choose a technology below and start learning.</p>
+            <a href="#html">Start Learning HTML</a>
+        </section>
+
+        <section id="about">
+            <h2>About CodeNest</h2>
+            <p>CodeNest is a simple resource hub for students who are learning web development.</p>
+            <p>Explore HTML, CSS and JavaScript resources from one place.</p>
+            <a href="#top">Back to Top</a>
+        </section>
+
+        <section id="html">
+            <h2>🌐 HTML</h2>
+            <p>HTML is used to create the structure of web pages.</p>
+
+            <div>
+                <h3>HTML Basics</h3>
+                <p>Learn HTML elements, headings, paragraphs, links, images, tables and forms.</p>
+                <a target="_blank"  href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn HTML on MDN</a>
+            </div>
+
+            <div>
+                <h3>HTML Tutorials</h3>
+                <p>Learn HTML step by step with examples.</p>
+                <a target="_blank"  href="https://www.w3schools.com/html/">visit W3Schools</a>
+            </div>
+
+            <a href="#css">Next: Learn CSS</a>
+            <a href="#top">Back to Top</a>
+        </section>
+
+        <section id="css">
+            <h2>🎨 CSS</h2>
+            <p>CSS is used to style and design web pages.</p>
+            <div>
+                <h3>CSS Basics</h3>
+                <p>Learn colors, fonts, backgrounds, borders, spacing and layouts.</p>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Learn CSS on MDN</a>
+            </div>
+            <div>
+                <h3>CSS Tutorials</h3>
+                <p>Learn CSS with practical examples and exercises.</p>
+                <a target="_blank" href="https://www.w3schools.com/css/">Visit W3Schools</a>
+            </div>
+
+            <a href="#js">Next: Learn JavaScript</a>
+            <a href="#top">Back to Top</a>
+        </section>
+
+        <section id="js">
+            <h2>⚡ JavaScript</h2>
+            <p>JavaScript is used to make web pages interactive and dynamic.</p>
+
+            <div>
+                <h3>JavaScript Basics</h3>
+                <p>Learn variables, operators, conditions, loops, functions and arrays.</p>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Learn JavaScript on MDN</a>
+            </div>
+            <div>
+                <h3>JavaScript Tutorials</h3>
+                <p>Learn JavaScript concepts with examples.</p>
+                <a target="_blank" href="https://www.w3schools.com/js/">Visit W3Schools</a>
+            </div>
+
+            <a href="#resources">Explore More Resources</a>
+            <a href="#top">Back to Top</a>
+        </section>
+
+        <section id="resources">
+            <h2>📚 Developer Resources</h2>
+            <p></p>
+            <div>
+                <h3>MDN Web Docs</h3>
+                <p>Complete documentation for HTML, CSS and JavaScript.</p>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/">Open MDN</a>
+            </div>
+
+            <div>
+                <h3>W3Schools</h3>
+                <p>Beginner-friendly tutorials and examples.</p>
+                <a target="_blank" href="https://www.w3schools.com/">Open W3Schools</a>
+            </div>
+
+            <div>
+                <h3>GitHub</h3>
+                <p>Explore open-source projects and developer repositories.</p>
+                <a target="_blank" href="https://github.com/">Open GitHub</a>
+            </div>
+
+            <a href="#top">Back to Top</a>
+        </section>
+    </main>
+
+    <footer>
+        <h3>CodeNest - Your Home for Developer Resources</h3>
+        <p>Keep Learning. Keep Building. Keep Growing. 🚀</p>
+        <a href="#welcome">Home</a>
+        <a href="html">HTML</a>
+        <a href="css">CSS</a>
+        <a href="js">JavaScript</a><br>
+        <a target="_blank" href="https://github.com/">GitHub</a> |
+        <a target="_blank" href="https://developer.mozilla.org/">MDN </a>|
+        <a target="_blank" href="https://www.w3schools.com/">W3Schools</a>
+        <p>&copy; 2026 CodeNest. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

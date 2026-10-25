@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #050816;
+    color: #F8FAFC;
+    line-height: 50px;
+}
+
+h1{
+    color: #00E5FF;
+}
+
+h2{
+    color:  #8B5CF6;;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px;
+    color:  #00E5FF;
+}
+
+#prehistoric{
+   background-color: #102415;;
+}
+
+#prehistoric h1 {
+    color: #A5D66A;
+}
+
+#prehistoric h2 {
+    color: #D4A373;
+}
+
+#prehistoric p {
+    color: #D8E8D5;
+}
+
+#prehistoric a {
+    color: #7FD36B;
+}
+
+#ancient{
+    background: #3B2416;
+}
+
+#ancient h1{
+   color: #D4A373;
+}
+
+#ancient h2{
+    color: #F5E6C8;
+}
+#ancient a{
+    color: #e9b98a
+}
+
+
+
+#future{
+    background: #050816;
+    color: #F8FAFC;
+}
+
+#future h2{
+    color: #8B5CF6;
+}
+
+#travel {
+    background-color: rgb(36, 3, 118);
+}
+
+#next{
+    background-color: rgb(36, 3, 118);
+}
