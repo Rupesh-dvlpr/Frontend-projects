@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ROYAL GALA | VIP INVITATION</title>
+    <style>
+        :root{
+          --primary-color: #d4a01e;
+          --secondary-color: rgb(145, 11, 11);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            border-bottom: 1px solid rgb(76, 43, 43);
+            padding: 30px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        
+        header h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            color: var(--primary-color);
+        }
+        
+        header p{
+            font-size: 12px;
+            color: var(--secondary-color);
+            letter-spacing: 3px;
+        }
+        
+        img{
+            width: 170px;
+            transition: 2s;
+        }
+
+        img:hover{
+            box-shadow: 0 0 10px rgb(113, 112, 112);
+        }
+        
+        main{
+            margin: 50px;
+            border: 1px solid rgb(190, 162, 4);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0  8px rgb(159, 149, 11);
+            line-height: 1.6;
+        }
+
+        h1{
+            color: var(--primary-color);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 56px;
+        }
+        hr{
+            border: 1px solid #ffe8ae;
+           }
+        main p{
+            color: rgb(163, 152, 129);
+            font-size: 14px;
+            padding: 30px;
+        }
+
+        .top p{
+            color: #ab8014;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        h3{
+            color: #d4a01e;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .line
+        {
+            width: 100px;
+            height: 2px;
+            background-color: var(--secondary-color);
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        table{
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+        }
+
+        table p{
+            color: var(--secondary-color);
+        }
+
+        table h3{
+            color: white;
+        }
+        
+        .foot p{
+            color: gray;
+        }
+
+        .foot p:first-child{
+            color: var(--primary-color);
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+        .foot button{
+            background-color: var(--secondary-color);
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--primary-color);
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        footer p{
+            text-align: center;
+            color: gray;
+            font-size: 12px;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Elvonis Luxury Gold and Crimson Emblem.png" alt="image">
+        <h2>ELVONIS EVENTS</h2>
+        <p>WHERE DREAMS MEET REALITY</p>
+    </header>
+
+    <main>
+        <section class="top">
+            <p>YOU ARE CORDIALLY INVITED TO</p>
+            <h1>THE ELVONIS GALA</h1>
+            <div class="line"></div>
+        </section>
+        <section class="bottom">
+            <h3>An Exclusive Evening of Elegance</h3>
+            <p>Join us for a prestigious evening filled with elegance, celebration and unforgettable memories. Your presence will make this occasion special.</p>
+            <hr>
+        </section>
+        <section class="table">
+            <table>
+                <tr>
+                    <td>
+                        <p>EVENT DATE</p>
+                        <h3>December 25, 2026</h3>
+                    </td>
+                    <td>
+                        <p>EVENT TIME</p>
+                        <h3>7:00 PM Onwards</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>VENUE</p>
+                        <h3>The Grand Palace</h3>
+                    </td>
+                    <td>
+                        <p>DRESS CODE</p>
+                        <h3>Black Tie</h3>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+        </section>
+            <section class="foot">
+                <p>Your presence is our greatest honour.</p>
+                <button type="button" onclick="buttonEvent()">RESPOND TO INVITATION <i class="bi bi-arrow-up-right"></i> </button>
+                <p>BY INVITATION ONLY · STRICTLY VIP</p>
+            </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ELVONIS Events | Private Celebration</p>
+    </footer>
+
+    <Script src="script.js"></Script>
+</body>
+</html>
