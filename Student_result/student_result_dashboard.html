@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT RESULT DASHBOARD</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+
+        header{
+            background-color: rgb(1, 19, 75);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 20px 50px;
+            color: rgb(171, 171, 189);
+        }
+
+        header div:first-child{
+            display: flex;
+            gap: 10px;
+            line-height: 1.4;
+        }
+
+        header div i{
+            font-size: 40px;
+        }
+
+        header h1{
+            font-size: 24px;
+            color: white;
+        }
+
+        header p{
+            font-size: 12px;
+        }
+
+        main{
+            padding: 150px;
+            background-color: rgb(247, 254, 255);
+        }
+
+        .hero p:first-child{
+            color: green;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero h2{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p:last-child{
+            color: rgb(102, 102, 103);      
+        }
+
+        .result_information{
+            margin: 40px 0px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgb(213, 213, 213);
+        }
+
+        .result_information p{
+            color: rgb(102, 102, 103);
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+       .result_information div:first-child{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+       }
+
+       .result_information i{
+        font-size: 30px;
+       }
+
+       .result_information table{
+        margin: 20px 0;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 30px;
+       }
+
+      .result_information button{
+        width: 100%;
+        color: white;
+        background-color: rgb(9, 98, 9);
+        padding: 15px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+      }
+
+      .result_information button i{
+        font-size: 16px;
+      }
+
+      .result_information p:last-child{
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .cards{
+        display: flex;
+        
+        grid-template-columns:repeat(1fr, 2fr);
+        gap:30px
+      }
+
+      .card{
+           width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgb(213, 213, 213);
+            line-height: 1.6;
+      }
+
+      .card p{
+          color: rgb(102, 102, 103);
+            font-size: 14px;
+      }
+
+      .card i{
+        font-size: 28px;
+      }
+
+      footer p{
+        color: rgb(102, 102, 103);
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 30px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+                <h1>STUDENT PORTAL</h1>
+                <p>Academic Result Announcement System</p>
+            </div>
+        </div>
+        <div>
+            <p>ACADEMIC YEAR 2026-2027</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p>YOUR FUTURE STARTS HERE</p>
+            <h2>Check Your Results</h2>
+            <p>Welcome to the Student Result Portal. Check your academic performance and view your examination result.</p>
+        </section>
+
+        <section class="result_information">
+            <div>
+                <div><i class="bi bi-file-earmark-text-fill"></i></div>
+                <div>
+                    <h3>Result Information</h3>
+                    <p>Student academic details</p>
+                </div>
+            </div>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        <p>Student Name</p>
+                        <h3>Rupesh Patel</h3>
+                    </td>
+                    <td>
+                        <p>Course</p>
+                        <h3>Java Full Stack</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Examination</p>
+                        <h3>Final Assessment</h3>
+                    </td>
+                    <td>
+                        <p>Institute</p>
+                        <h3>Naresh IT</h3>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="button" onclick="generateResult()">ANNOUNCE RESULT <i class="bi bi-arrow-up-right"></i> </button>
+
+            <p>Please confirm before viewing your result.</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3><i class="bi bi-shield-lock-fill"></i></h3>
+                <h3>Student Access</h3>
+                <p>Confirmation before viewing results.</p>
+            </div>
+            <div class="card">
+                <h3><i class="bi bi-file-earmark-check-fill"></i></h3>
+                <h3>Result Report</h3>
+                <p>View your academic result details.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Student Portal | Academic Result System</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
