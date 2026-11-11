@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORVIX MART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="bi bi-shop"></i>ORVIX MART</h1>
+        <h2>Smart Shopping</h2>
+    </header>
+    <main>
+        <h2>Electronics Products</h2>
+        <section class="electronicsProducts">
+            <div class="card">
+                <img src="images/laptop.png">
+                <h3>Laptop</h3>
+                <p>Price: ₹50,000</p>
+                <button onclick= "buyProduct('Laptop',50000)">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="images/headphone.png">
+                <h3>Headphones</h3>
+                <p>Price: ₹2,000</p>
+                <button onclick= "buyProduct('Headphones',2000)">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="images/bluetoothSpeaker.png">
+                <h3>Bluetooth Speaker</h3>
+                <p>Price: ₹1,500</p>
+                <button onclick= "buyProduct('Bluetooth Speaker',1500)">Buy Now</button>
+            </div>
+        </section>
+        <h2>Fashion Products</h2>
+         <section class="fashionProducts">
+            <div class="card">
+                <img src="images/tshirt.png">
+                <h3>T-Shirt</h3>
+                <p>Price: ₹500</p>
+                <button onclick= "buyProduct('T-shirt',500)">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="images/jeans.png">
+                <h3>Jeans</h3>
+                <p>Price: ₹1,200</p>
+                <button onclick= "buyProduct('Jeans',1200)">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="images/shoes.png">
+                <h3>Shoes</h3>
+                <p>Price: ₹2,000</p>
+                <button onclick= "buyProduct('Shoes',2000)">Buy Now</button>
+            </div>
+        </section>
+        <h2>Home Products</h2>
+         <section class="HomeProducts">
+            <div class="card">
+                <img src="images/tableLamp.png">
+                <h3>Table Lamp</h3>
+                <p>Price: ₹800</p>
+                <button onclick= "buyProduct('Table Lamp',800)">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="images/Wallclock.png">
+                <h3>Wall Clock</h3>
+                <p>Price: ₹700</p>
+                <button onclick= "buyProduct('Wall Clock',700)">Buy Now</button>
+            </div>
+            <div class="card">
+                <img src="images/deskOrganizer.png">
+                <h3>Desk Organizer</h3>
+                <p>Price: ₹400</p>
+                <button onclick= "buyProduct('Desk Organizer',400)">Buy Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Welcome to SHOPNEX!</h1>
+          <div id="orderSummary">
+                <p>Here is your Order Summary......</p>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
