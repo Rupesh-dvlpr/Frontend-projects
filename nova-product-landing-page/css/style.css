@@ -1,33 +1,195 @@
 :root{
-    /* --primary-color: #171717;
-    --secondary-color: #a31c1b;
-    --text-color: #6db092;
+    --background : #080812;
+    --secondary-background : #111126;
+    --primary-accent: #8B5CF6;
+    --secondary-accent: #2563EB;
+    --main-text: #FFFFFF;
+    --secondary-text: #A1A1B5;
+    --border: rgba(255, 255, 255, 0.12);
 
-
-    --primary-color2: #1a0123;
-    --secondary-color2: #b46fce;
-    --text-color2: #ece0f0; */
-
-    --Background : #080812;
-    --Secondary-Background : #111126;
-    --Primary-Accent: #8B5CF6;
-    --Secondary-Accent: #2563EB;
-    --Main-text: #FFFFFF;
-    --Secondary-text: #A1A1B5;
-    --Border: rgba(255,255,255,0.12);
-
-    --Primary-font-family: "Josefin Sans", sans-serif;
-    --Heading-font-weight: 700;
-    --Standard-container-width: 80%;
-    --Section-spacing: 30px;
-    --Border-radius: 15px;
-    --Transition-duration: 0.4s;
+    --primary-font-family: "Josefin Sans", sans-serif;
+    --heading-font-weight: 700;
+    --standard-container-width: 80%;
+    --section-spacing: 80px;
+    --border-radius: 15px;
+    --transition-duration: 0.4s;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--Background);
-    color: var(--Main-text);
+    font-family: var(--primary-font-family);
+}
+
+body{
+    background-color: var(--background);
+    color: var(--main-text);
+}
+
+/* navigation style */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 1rem 5rem;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+header ul{
+    display: flex;
+    gap: 3rem;
+}
+
+header li{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--secondary-text);
+    transition: var(--transition-duration);
+}
+
+header a:hover{
+    color: var(--main-text);
+
+}
+
+
+.logo{
+    color: var(--main-text);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cta-button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--primary-accent);
+    color: var(--main-text);
+    padding: 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: var(--transition-duration);
+}
+
+header .cta-button{
+    justify-self: end;
+}
+
+.cta-button:hover{
+    background-color: var(--secondary-accent);
+
+}
+
+/* hero styles */
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 6rem 5% 4rem;
+    min-height: calc(100vh - 80px);
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.eyebrow{
+    color: var(--primary-accent);
+    font-size: 10px;
+    padding-bottom: 2rem;
+}
+
+.hero h1{
+    font-size: 84px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.hero-description{
+    color: var(--secondary-text);
+    padding-bottom: 2rem;
+}
+
+.pricing{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.pricing a{
+    text-decoration: none;
+}
+
+.pricing small{
+    color: var(--secondary-text);
+}
+
+.hero-stats{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stat-value{
+    font-size: 24px;
+}
+
+.stat-label{
+    font-size: 10px;
+    color: var(--secondary-text);
+}
+
+.suggestion{
+    color: var(--secondary-text);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+/* Background radial lighting effect from Figma */
+.product-image::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(8, 8, 18, 0) 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.headphone-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 1; /* Keeps image above the radial glow */
 }
